@@ -1,5 +1,12 @@
 #include <stdio.h>
-/* This is my first C code ! */
+/**
+ *  * main - Entry point
+ *   * 
+ *    * Description: 'this program prints ("Programming is like building a multilingual puzzle'
+ *     * @parameter: no parameters
+ *      * 
+ *       * Return: Always 0 (Success)
+ *        */
 int main(void)
 {
 

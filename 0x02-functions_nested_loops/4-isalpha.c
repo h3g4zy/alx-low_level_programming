@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
-   * isalpha: used to check for alphabet characters
+   * _isalpha : used to check for alphabet characters
     * @c: character to be checked
      * Return: 1 if c is a letter, lowercase or uppsercase. Return 0 otherwise
       */

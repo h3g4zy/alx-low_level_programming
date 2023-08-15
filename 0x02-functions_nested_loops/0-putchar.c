@@ -5,7 +5,7 @@
  * main-EntryPoint
  * Return: Always 0
  */
-void main()
+int main(void)
 {
 
 	_putchar('_');
@@ -17,4 +17,5 @@ void main()
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 }

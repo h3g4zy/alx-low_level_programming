@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_alhpabet_10x - Make the alphabet 10x times
- * Return: void
- *
- *
- */
-
+   * main - Entry point
+    * 
+     * Description: print_alphabet_x10
+      * @parameter: print_alphabet_x10r
+       * 
+        * Return: Always 0 (Success)
+	 */
 void print_alphabet_x10(void)
 {
 	int i = 0;

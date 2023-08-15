@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-void main()
+int main()
 {
 	_putchar('_');
 	_putchar('p');
@@ -12,4 +12,5 @@ void main()
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return(0);
 }

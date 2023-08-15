@@ -15,7 +15,7 @@ void jack_bauer(void)
 	c = 0;
 	d = 0;
 
-	while (a <= 2 && b <= 3)
+	while ((a <= 2 && b <= 3) || (a <= 1 && b <= 9))
 	{
 		for (a = 0; a <= 2; a++)
 		for (b = 0; b <= 3; b++)

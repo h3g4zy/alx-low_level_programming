@@ -20,6 +20,7 @@ int _abs(int n)
 	else
 	{
 		int absolute;
+
 		absolute = n * -1;
 		return (absolute);
 	}

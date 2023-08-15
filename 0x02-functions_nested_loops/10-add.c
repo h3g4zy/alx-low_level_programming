@@ -4,7 +4,7 @@
 * add -  a function that adds two integers and returns the result.
 * @a: first integer to add
 * @b: second integer to add
-* Return : value of a + b
+* Return : add returns the value of a + b
 */
 
 int add(int a, int b)

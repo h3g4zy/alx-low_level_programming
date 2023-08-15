@@ -3,6 +3,8 @@
 /**
  * print_alhpabet_10x - Make the alphabet 10x times
  * Return: void
+ *
+ *
  */
 
 void print_alphabet_x10(void)

@@ -17,5 +17,4 @@ void main()
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (0);
 }

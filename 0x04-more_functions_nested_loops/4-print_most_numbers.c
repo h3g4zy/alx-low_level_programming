@@ -2,8 +2,7 @@
 
 /**
    * print_moast_numbers - prints the numbers,
-   * from 0 to 9, followed b a new line.
-   * except 2 and 4
+   * from 0 to 9 except 2 and 4, followed b a new line.
      * Return: void
       */
 

@@ -2,7 +2,6 @@
 
 /**
  * swap_int - swaps the values of two integers
- * and updates the value it points to 98
  * @a: input parameter 1
  * @b: input parameter 2
  * Return: nothing

@@ -19,5 +19,5 @@ while(x--)
 {
     tempo = s[x];
 }
-s = tempo;
+s* = tempo;
 }

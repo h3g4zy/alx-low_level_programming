@@ -22,7 +22,8 @@ _putchar(str[y]);
 }
 else
 {
-for (y = x - 1 / 2; str[y] != '\0'; y++)
+    x--;
+for (y = x / 2; str[y] != '\0'; y++)
 {
 _putchar(str[y]);
 }

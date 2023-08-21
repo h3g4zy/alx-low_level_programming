@@ -15,9 +15,10 @@ char tempo;
 for (x = 0; s[x] != '\0'; ++x)
 ;
 
-while(x--)
+for (y = 0; y < x / 2; y++)
 {
-    tempo = s[x];
+tempo = s[y];
+s[y] = s[x - 1 - y];
+s[x - 1 - y] = tempo;
 }
-s* = tempo;
 }

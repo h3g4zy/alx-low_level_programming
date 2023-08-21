@@ -8,7 +8,7 @@
  * instead of the number and for the multiples o
  * f five print Buzz. For numbers which
  * are multiples of both three and five print FizzBuzz
- */
+ *//
 
 int main()
 {

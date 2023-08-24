@@ -15,7 +15,7 @@ int temp;
 
 first = 0;
 
-for (i = n - 1; i >= 0; i--)
+for (i = (n - 1); i >= 0; i--)
 {
 temp = a[first];
 a[first] = a[i];

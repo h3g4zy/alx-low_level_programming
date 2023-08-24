@@ -3,11 +3,13 @@
 
 /**
  * _strcat - a function that concatenates two strings.
- * Return: Always 0.
+ * @dest: destination string
+ * @src: source string
+ * Return: pointer to destination string
  */
 
 char *_strcat(char *dest, char *src)
 {
 char *ptr = strcat(dest, src);
-return ptr;
+return (ptr);
 }

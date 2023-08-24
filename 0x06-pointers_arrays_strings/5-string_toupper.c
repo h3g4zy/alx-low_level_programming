@@ -10,11 +10,15 @@
 
 char *string_toupper(char *str)
 {
-while (*str != '\0')
+int i;
+
+for(i = 0; str[i] != '\0'; i++)
 {
-*str = toupper(*str);
-str++;
+if (str[i] >= 97 && str[i] <= 122)
+{
+str[i] = str[i] - 32;
+}
 }
 
-return (0);
+return (str);
 }

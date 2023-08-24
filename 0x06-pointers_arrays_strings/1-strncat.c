@@ -15,13 +15,12 @@ int c, i;
 
 c = 0;
 
-/* Count characters of destnation string */
 while (dest[c])
 c++;
 
 for (i = 0; i < n && src[i] != '\0'; i++)
 {
-    dest[c + i] = src[i];
+dest[c + i] = src[i];
 }
 dest[c + i] = '\0';
 

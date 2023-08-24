@@ -14,7 +14,7 @@ int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-str = toupper(str);
+str = toupper(*str);
 }
 
 return (0);

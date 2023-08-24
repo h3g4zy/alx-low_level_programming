@@ -18,9 +18,10 @@ c = 0;
 
 for (i = 0; i < n && src[i] != '\0'; i++)
 {
-    dest[c++] = src[i];
+    dest[i] = src[i];
 }
-dest[c + i] = '\0';
+while (i < n)
+dest[i++] = '\0';
 
 return (dest);
 }

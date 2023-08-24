@@ -19,9 +19,10 @@ for (i = 0; str[i] != '\0' ; i++)
 for (x = 0; separators[x] != '\0'; x++)
 {
 if (str[i] == separators[x])
-{ 
-    if (str[i+1] >= 97 && str[i+1] <= 122)
-    string_toupper(str[i + 1]);
+{
+i++;
+if (str[i] >= 97 && str[i] <= 122)
+str[i] = toupper(str[i]);
 }
 }
 }

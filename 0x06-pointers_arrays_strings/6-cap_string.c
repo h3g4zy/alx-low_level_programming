@@ -16,15 +16,18 @@ char separators[] = " \t\n,;.!?\"(){}";
 
 for (i = 0; str[i] != '\0' ; i++)
 {
+
 for (x = 0; separators[x] != '\0'; x++)
 {
 if (str[i] == separators[x])
-{
 i++;
+{
 if (str[i] >= 97 && str[i] <= 122)
 str[i] = toupper(str[i]);
 }
+
 }
+
 }
 
 

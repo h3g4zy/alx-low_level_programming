@@ -22,4 +22,5 @@ break;
 s1++;
 s2++;
 }
+return (i);
 }

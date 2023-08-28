@@ -7,7 +7,7 @@
  * @s: string
  * @accept: string containing the
  * characters to match
- * Return: matching index
+ * Return: characters matching
  */
 
 char *_strpbrk(char *s, char *accept)

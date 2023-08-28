@@ -2,9 +2,9 @@
 
 /**
  * _memcpy - copies memory area
- * @s: string to be manipulated
- * @b: constant
- * @n: max bytes to use
+ * @dest: destination
+ * @src: source
+ * @n: length of copied characters
  * Return: s
  */
 
@@ -16,6 +16,6 @@ for (itr = 0; itr < n; itr++)
 {
 dest[itr] = src[itr];
 }
-return (dest);
 
+return (dest);
 }

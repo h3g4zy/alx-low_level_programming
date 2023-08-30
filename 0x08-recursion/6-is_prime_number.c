@@ -13,6 +13,12 @@ int is_prime_number(int n)
 return (check_prime(n, 2));
 }
 
+/**
+ * check_prime - checks prime number
+ * @n: number
+ * @other: other int
+ * Return: 1 if n is prime, 0 otherwise.
+
 int check_prime(int n, int other)
 {
 if (other >= n && n > 1)

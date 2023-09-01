@@ -1,0 +1,443 @@
+!<arch>
+0-isupper.c/    0           0     0     644     241       `
+#include "main.h"
+
+/**
+ * isupper - function to check whether a character is uppercase or not
+ * Return: 0 if lowercase, 1 if uppercase
+ * @c: character
+ */
+
+int _isupper(int c)
+{
+	if (c >= 65 && c <= 90)
+		return (1);
+	else
+		return (0);
+}
+
+0-memset.c/     0           0     0     644     293       `
+#include "main.h"
+
+/**
+ * _memset - fills memory with a constant byte.
+ * @s: string to be manipulated
+ * @b: constant
+ * @n: max bytes to use
+ * Return: s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+unsigned int itr;
+
+for (itr = 0; n > 0; itr++, n--)
+{
+s[itr] = b;
+}
+return (s);
+
+}
+
+0-strcat.c/     0           0     0     644     282       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcat - a function that concatenates two strings.
+ * @dest: destination string
+ * @src: source string
+ * Return: pointer to destination string
+ */
+
+char *_strcat(char *dest, char *src)
+{
+char *ptr = strcat(dest, src);
+return (ptr);
+}
+1-isdigit.c/    0           0     0     644     256       `
+#include "main.h"
+
+/**
+   * _isdigit - Check if a character is digit or not
+    * @c: character to be checked
+     * Return: 1 if c is a digit, Return 0 otherwise
+      */
+
+int _isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
+}
+1-memcpy.c/     0           0     0     644     294       `
+#include "main.h"
+
+/**
+ * _memcpy - copies memory area
+ * @dest: destination
+ * @src: source
+ * @n: length of copied characters
+ * Return: s
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int itr;
+
+for (itr = 0; itr < n; itr++)
+{
+dest[itr] = src[itr];
+}
+
+return (dest);
+}
+1-strncat.c/    0           0     0     644     429       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strncat - a function that concatenates two strings.
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to be concated
+ * Return: pointer to destination string
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+int c, i;
+
+c = 0;
+
+while (dest[c])
+c++;
+
+for (i = 0; i < n && src[i] != '\0'; i++)
+{
+dest[c + i] = src[i];
+}
+dest[c + i] = '\0';
+
+return (dest);
+}
+
+100-atoi.c/     0           0     0     644     730       `
+#include "main.h"
+/**
+   * _atoi - converts a string to an integer.
+    * @s: the string to convert
+     * Return: the converted string.
+      */
+int _atoi(char *s)
+{
+		short boolean;
+			int i, minus, result;
+
+				i = minus = result = boolean = 0;
+					minus = -1;
+
+						while (s[i] != '\0')
+								{
+											if (s[i] == '-')
+															minus *= -1;
+
+													if (s[i] >= '0' && s[i] <= '9')
+																{
+																				result *= 10;
+																							result -= (s[i] - '0');
+																										boolean = 1;
+																												}
+															else if (boolean == 1)
+																			break;
+																	i++;
+																		}
+							result *= minus;
+								return (result);
+}
+2-strchr.c/     0           0     0     644     230       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strchr - locates a character in a string
+ * @s: string
+ * @c: character
+ * Return: pointer to c
+ */
+
+char *_strchr(char *s, char c)
+{
+char *ret;
+
+ret = strchr(s, c);
+
+return (ret);
+}
+2-strlen.c/     0           0     0     644     191       `
+#include "main.h"
+
+/**
+ * _strlen - returns the length of a string
+ * @s: input string
+ * Return: nothing
+ */
+
+int _strlen(char *s)
+{
+int i;
+
+for (i = 0; *s != '\0'; s++)
+++i;
+
+return (i);
+}
+
+2-strncpy.c/    0           0     0     644     404       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strncpy - a function that concatenates two strings.
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to be concated
+ * Return: pointer to destination string
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+int i;
+
+for (i = 0; i < n && src[i] != '\0'; i++)
+{
+dest[i] = src[i];
+}
+while (i < n)
+dest[i++] = '\0';
+
+return (dest);
+}
+3-islower.c/    0           0     0     644     304       `
+#include "main.h"
+#include <ctype.h>
+
+/**
+  * _islower - a function that checks for lowercase character
+  * @c: is the character we would check for being lowercase
+  * Return: 1 if c is lowercase , 0 otherwise.
+  */
+
+int _islower(int c)
+{
+	if (islower(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+3-puts.c/       0           0     0     644     175       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _puts - prints a string, followed by a new line
+ * @str: input string
+ * Return: nothing
+ */
+
+void _puts(char *str)
+{
+puts(str);
+}
+
+3-strcmp.c/     0           0     0     644     322       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcmp - a function that compares two strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: 1 if true , 0 if false
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+int i = 0;
+
+while (*s1)
+{
+if (*s1 != *s2)
+{
+i = (((int)*s1 - 48) - ((int)*s2 - 48));
+break;
+}
+s1++;
+s2++;
+}
+return (i);
+}
+3-strspn.c/     0           0     0     644     303       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: string
+ * @accept: string containing the
+ * characters to match
+ * Return: initial matching length
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+int len;
+
+len = strspn(s, accept);
+
+return (len);
+}
+
+4-isalpha.c/    0           0     0     644     300       `
+#include "main.h"
+#include <ctype.h>
+
+/**
+   * _isalpha - Check for alphabetic characters
+    * @c: character to be checked
+     * Return: 1 if c is a letter, lowercase or uppsercase. Return 0 otherwise
+      */
+
+int _isalpha(int c)
+{
+	if (isalpha(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+4-strpbrk.c/    0           0     0     644     306       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strpbrk - searches a string for 
+ * any of a set of bytes
+ * @s: string
+ * @accept: string containing the
+ * characters to match
+ * Return: characters matching
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+char *ret;
+
+ret = strpbrk(s, accept);
+return (ret);
+}
+5-strstr.c/     0           0     0     644     296       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strstr - locates a substring
+ * @haystack: string
+ * @needle: string containing the
+ * characters to match
+ * Return: characters matching
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+char *ret;
+
+ret = strstr(haystack, needle);
+return (ret);
+}
+6-abs.c/        0           0     0     644     333       `
+#include "main.h"
+#include <stdlib.h>
+
+/**
+   * _abs - return absolute value of integer
+    * @n: integerr to be checked
+     * Return: absolute value of integer
+      */
+
+int _abs(int n)
+{
+	if (n > 0)
+	{
+		return (n);
+	}
+	else if (n == 0)
+	{
+		return (n);
+	}
+	else
+	{
+		int absolute;
+
+		absolute = n * -1;
+		return (absolute);
+	}
+}
+
+9-strcpy.c/     0           0     0     644     373       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest
+ * @dest: string destination
+ * @src: string source
+ * Return: nothing
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+int i = -1;
+
+do {
+i++;
+dest[i] = src[i];
+} while (src[i] != '\0');
+
+return (dest);
+}
+
+_putchar.c/     0           0     0     644     299       `
+#include <unistd.h>
+#include "main.h"
+
+/**
+ *  * _putchar - writes the character c to stdout
+ *   * @c: The character to print
+ *    *
+ *     * Return: On success 1.
+ *      * On error, -1 is returned, and errno is set appropriately.
+ *       */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+
+main.c/         0           0     0     644     154       `
+#include "main.h"
+
+int main(void)
+{
+	    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+	        return (0);
+}

@@ -10,21 +10,37 @@
 
 int main(int argc, char *argv[])
 {
-int res;
-(void)*argv;
+	int i;
+	int j;
+	int c;
+	int sum;
+	char *s;
 
-for (int i = 0; i < argc; i++)
-{
-  if (atoi(argv[i]) < '0' || atoi(argv[i] > '9'))
-  {
-    printf("Error\n");
-    return (1);
-  }
-  else
-  {
-    res += atoi(argv[i]);
-  }
-}
-printf("%d\n", res);
-return (0);
+	sum = 0;
+	c = 0;
+
+	i = 1;
+	while (i < argc)
+	{
+		s = argv[i];
+		j = 0;
+		while (s[j] != '\0')
+		{
+			if (s[j] < '0' || s[j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
+		}
+		i++;
+	}
+
+	for (i = 1; i < argc; i++)
+	{
+		c = atoi(argv[i]);
+		sum = sum + c;
+	}
+	printf("%d\n", sum);
+	return (0);
 }

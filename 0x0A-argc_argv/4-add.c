@@ -11,14 +11,19 @@
 int main(int argc, char *argv[])
 {
 int res;
-char *c;
+(void)*argv;
 
-while (--argc)
+for (int i = 0; i < argc; i++)
 {
-for (c = argv[argc]; *c; c++)
-if (*c < '0' || *c > 9)
-return(printf("Error\n"), 1);
-res += atoi(argv[argc]);
+  if (atoi(argv[i]) < '0' || atoi(argv[i] > '9'))
+  {
+    printf("Error\n");
+    return (1);
+  }
+  else
+  {
+    res += atoi(argv[i]);
+  }
 }
 printf("%d\n", res);
 return (0);

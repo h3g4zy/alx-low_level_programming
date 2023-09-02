@@ -11,27 +11,25 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int j;
 	int c;
 	int sum;
 	char *s;
 
 	sum = 0;
 	c = 0;
-
 	i = 1;
+
 	while (i < argc)
 	{
 		s = argv[i];
-		j = 0;
-		while (s[j] != '\0')
+
+		while (s[i] != '\0')
 		{
-			if (s[j] < '0' || s[j] > '9')
+			if (s[i] < '0' || s[i] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			j++;
 		}
 		i++;
 	}
@@ -39,7 +37,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		c = atoi(argv[i]);
-		sum = sum + c;
+		sum += c;
 	}
 	printf("%d\n", sum);
 	return (0);

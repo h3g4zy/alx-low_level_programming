@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 char *copy;
 int count_s1, count_s2, i, j;
 
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL && s2 == NULL)
 return (NULL);
 
 

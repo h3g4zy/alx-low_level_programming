@@ -9,17 +9,17 @@
  */
 int main(void)
 {
-    char *s, *s2;
+    char *s;
 
-    s = str_concat("Betty ", "Holberton");
-    s2 = str_concat("Betty ", NULL);
+    s = str_concat("Betty ", "OHLALA");
+    /*s2 = str_concat("Betty ", NULL);*/
 
     if (s == NULL)
     {
         printf("failed\n");
         return (1);
     }
-    printf("%s\n", s2);
+
     printf("%s\n", s);
     free(s);
     return (0);

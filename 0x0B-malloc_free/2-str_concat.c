@@ -4,9 +4,11 @@
 
 /**
  * str_concat - concatenates two strings
- * @str: string to be copied
+ * @s1: first string
+ * @s2: second string
  * Return: Always 0 (Success)
  */
+
 char *str_concat(char *s1, char *s2)
 {
 char *copy;

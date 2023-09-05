@@ -7,6 +7,7 @@
  * argstostr - concatenates all the arguments of your program.
  * @ac: Integer arg count
  * @av: pointer to array of args.
+ * Returns: pointer to concated string
  */
 
 char *argstostr(int ac, char **av)
@@ -21,7 +22,7 @@ return (NULL);
 
 for (i = 0; i < ac; i++)
 {
-if(av[i] != NULL)
+if (av[i] != NULL)
 total_length += strlen(av[i]) + 1;
 }
 
@@ -43,6 +44,6 @@ str[current_pos++] = '\n';
 str[total_length] = '\0';
 
 
-return(str);
+return (str);
 
 }

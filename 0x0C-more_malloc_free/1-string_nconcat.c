@@ -27,10 +27,10 @@ n = len2;
 
 
 if (result == NULL)
-return NULL;
+return (NULL);
 
 strcpy(result, s1);
 strncat(result, s2, n);
 
-return result;
+return (result);
 }

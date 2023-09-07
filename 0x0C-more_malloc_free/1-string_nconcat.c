@@ -13,41 +13,24 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *copy;
-unsigned int count_s1, i, j;
+size_t len1 = strlen(s1);
+size_t len2 = strlen(s2);
+char *result = (char *)malloc(len1 + n + 1);
 
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-
-count_s1 = 0;
-
-while (s1[count_s1] != '\0')
-count_s1++;
+if (n >= len2)
+n = len2;
 
 
+if (result == NULL)
+return NULL;
 
-copy = (char *) malloc(count_s1 + n + 1);
+strcpy(result, s1);
+strncat(result, s2, n);
 
-if (copy == NULL)
-return (NULL);
-
-
-for (i = 0; i <= count_s1; i++)
-{
-copy[i] = s1[i];
-}
-
-
-j = count_s1;
-
-for (i = 0; i + j <= (count_s1 + n); i++)
-{
-copy[i + j] = s2[i];
-}
-
-printf("%d \n", strlen(copy));
-return (copy);
+return result;
 }

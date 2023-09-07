@@ -7,7 +7,7 @@
  * _calloc - concatenates two strings
  * @nmemb: number of elements
  * @size: size of each element in byte
- * Return: 0 
+ * Return: 0
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -26,5 +26,4 @@ return (NULL);
 
 memset(ptr, 0, total_size);
 return (ptr);
-
 }

@@ -8,7 +8,7 @@
  * @n: integer size
  * @s1: string
  * @s2: strin
- * Return: 0 for success and 98 for failure
+ * Return: concated array
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)

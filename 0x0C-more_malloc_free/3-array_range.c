@@ -27,8 +27,8 @@ return (NULL);
 
 for (i = 0; i <= total_size; i++)
 {
-    ptr[i] = min;
-    min++;
+ptr[i] = min;
+min++;
 }
 return (ptr);
 }

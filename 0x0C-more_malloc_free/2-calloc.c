@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _calloc - concatenates two strings
+ * _calloc - allocates memory for an array
  * @nmemb: number of elements
  * @size: size of each element in byte
  * Return: 0

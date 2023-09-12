@@ -3,11 +3,7 @@
 
 /**
  * print_dog - prints a struct dog
- * @name: dog's name
- * @d: initialized dog
- * @age: age of dog
- * @owner: owner
- * 
+ * @d: pointer to struct dog
  * Return: void
  */
 

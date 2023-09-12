@@ -1,7 +1,6 @@
 #ifndef _DOG
 #define _DOG
 
-
 /**
  * struct dog - a dog struct
  * @name: dog's name
@@ -10,6 +9,7 @@
  * 
  * Description: a dogs struct
 */
+
 struct dog
 {
 char * name;

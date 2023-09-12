@@ -32,6 +32,7 @@ return (NULL);
 (*ptr).owner = malloc(sizeof(char) * (strlen(owner) + 1));
 if (ptr->owner == NULL)
 {
+free(ptr->name);
 free(ptr);
 return (NULL);
 }

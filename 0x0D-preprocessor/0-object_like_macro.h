@@ -2,4 +2,4 @@
 
 #define SIZE 1024
 
-#endif
+#endif /* object_like_macro_h */

@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "3-function_like_macro.h": "c",
+        "4-sum.h": "c"
     }
 }

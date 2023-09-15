@@ -4,7 +4,6 @@
  * print_strings - prints strings, followed by a new line.
  * @separator: separator of strings
  * @n: number of strings
- * 
  * Return: Void
  */
 

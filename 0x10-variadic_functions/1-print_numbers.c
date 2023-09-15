@@ -4,7 +4,6 @@
  * print_numbers - prints numbers, followed by a new line.
  * @separator: separator of numbers
  * @n: number of integers
- * 
  * Return: Void
  */
 

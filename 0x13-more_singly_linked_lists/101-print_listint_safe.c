@@ -17,7 +17,7 @@ while (current != NULL)
 if (current == loop_start)
 {
 printf("[%p] %d\n", (void *)current, current->n);
-break; // Detected a loop, exit the loop
+break;
 }
 
 printf("[%p] %d\n", (void *)current, current->n);

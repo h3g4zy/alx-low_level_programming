@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
-  * get_nodeint_at_index - deletes the head node of
-  * a listint_t linked list, and returns
-  * the head node’s data (n)
+  * get_nodeint_at_index - ggets the node of
+  * index from a listint_t linked list.
   * @head: pointer to pointer of listint_t
   * @index: index of node
   * 

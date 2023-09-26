@@ -4,7 +4,7 @@
   * free_listint - frees a listint_t list
   * @head: pointer to pointer of listint_t
   *
-  * Return: number of nodes
+  * Return: Void
   */
 
 void free_listint(listint_t *head)

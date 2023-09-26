@@ -7,7 +7,7 @@
   * Return: pointer to node
   */
 
-int sum_listint(listint_t *head);
+int sum_listint(listint_t *head)
 {
 int sum;
 listint_t *current = head;

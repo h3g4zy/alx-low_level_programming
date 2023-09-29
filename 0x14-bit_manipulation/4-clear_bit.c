@@ -8,7 +8,6 @@
  *
  * return: 1 success, -1 failure
  */
-
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 unsigned long int bitmask = 1ul << index;

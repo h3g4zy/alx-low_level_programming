@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -19,7 +21,7 @@ if (!filename || !letters)
 fo = open(filename, O_RDONLY);
 if (fo == -1)
 	return (0);
-bytes = read(fd, &buf[0], letters);
+bytes = read(fo, &buf[0], letters);
 bytes = write(STDOUT_FILENO, &buf[0], bytes);
 close(fo);
 return (bytes);

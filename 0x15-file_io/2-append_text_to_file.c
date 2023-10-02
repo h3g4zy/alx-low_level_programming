@@ -9,21 +9,21 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-    FILE *file;
-    size_t len;
-    size_t bytes_written;
+FILE *file;
+size_t len;
+size_t bytes_written;
 
-    if (filename == NULL || text_content == NULL)
-        return (filename == NULL) ? -1 : 1;
+if (filename == NULL || text_content == NULL)
+return (filename == NULL) ? -1 : 1;
 
-    file = fopen(filename, "a");
-    if (file == NULL)
-        return -1;
+file = fopen(filename, "a");
+if (file == NULL)
+return -1;
 
-    len = strlen(text_content);
-    bytes_written = fwrite(text_content, 1, len, file);
+len = strlen(text_content);
+bytes_written = fwrite(text_content, 1, len, file);
 
-    fclose(file);
+fclose(file);
 
-    return (bytes_written == len) ? 1 : -1;
+return (bytes_written == len) ? 1 : -1;
 }

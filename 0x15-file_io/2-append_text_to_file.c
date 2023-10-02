@@ -9,18 +9,19 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
+    FILE *file = fopen(filename, "a");
+    size_t len = strlen(text_content);
+    size_t bytes_written = fwrite(text_content, (1), len, file);
+    
     if (filename == NULL)
         return (-1);
 
     if (text_content == NULL)
         return (1);
 
-    FILE *file = fopen(filename, "a");
+
     if (file == NULL)
         return (-1);
-
-    size_t len = strlen(text_content);
-    size_t bytes_written = fwrite(text_content, (1), len, file);
 
     fclose(file);
 
